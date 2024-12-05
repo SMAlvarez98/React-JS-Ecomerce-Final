@@ -16,12 +16,12 @@ function App() {
     <BrowserRouter>
       <CartProvider>
         <NotificationProvider>
-          <NavBar cartCount={5} title="Tienda Coder" />
+          <NavBar cartCount={5} title="Tienda Lagrimas" />
           <Routes>
             <Route
               exact
               path="/"
-              element={<ItemListContainer greetings={"Todos los productos"} />}
+              element={<ItemListContainer greetings={"Tecnología Épica"} />}
             />
             <Route
               exact
@@ -34,7 +34,7 @@ function App() {
             <Route
               exact
               path="/detail/:productId"
-              element={<ItemDetailContainer greetings={"Tienda Coder"} />}
+              element={<ItemDetailContainer greetings={"Tienda Lagrimas"} />}
             />
 
             <Route exact path="/cart" element={<Cart />} />

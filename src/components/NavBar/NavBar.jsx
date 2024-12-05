@@ -49,7 +49,7 @@ function NavBar({ cartCount, title }) {
                 className={({ isActive }) =>
                   isActive ? "ActiveOption" : "Option"
                 }
-                to="/category/computers"
+                to="/category/notebook"
               >
                 Noteboks
               </NavLink>

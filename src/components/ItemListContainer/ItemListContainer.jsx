@@ -16,13 +16,6 @@ function ItemListContainer({greetings}) {
     useEffect(()=>{
       setLoader(true)
       
-      //const referencia; 
-      /* if(categoryId){
-        referencia = query(collection(db, "products"), where("category", "==", categoryId)); 
-      }else {
-        referencia = collection(db, "products"); 
-      } */
-     
       const collectionRef = categoryId
         ? query(collection(db, "products"), where("category", "==", categoryId))   // filtrados por categoria
         : collection(db, "products")    // todos los productos
@@ -33,7 +26,7 @@ function ItemListContainer({greetings}) {
               return {id: doc.id, ...doc.data()}
             })
             setProducts(productos)
-            setNotification("succes", "Producto encontrado");
+            setNotification("succes", "Bienvenido a la Tieda Lagrimas Epica");
           })
           .catch((error)=>{
             setNotification("danger", "No es posible obtener productos");
@@ -49,7 +42,7 @@ function ItemListContainer({greetings}) {
       return (
         <h4
           className="text-center"
-          style={{ backgroundColor: "red", color: "white", padding: "10px"}}
+          style={{ backgroundColor: "blue", color: "white", padding: "30px"}}
         >
           Loading...
         </h4>

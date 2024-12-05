@@ -15,10 +15,10 @@ export default function Checkout() {
     //setLoading(true)
     const objOrder = {
       buyer: {
-        firstName: "Adrian",
-        lastName: "Gonzalez",
+        firstName: "Santiago",
+        lastName: "Alvarez",
         phone: "123456789",
-        address: "Acan nomas",
+        address: "A la vuelta",
       }, 
       items: cart,
       totalQuantity,
